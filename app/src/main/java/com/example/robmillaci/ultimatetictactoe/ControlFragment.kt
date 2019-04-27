@@ -1,0 +1,22 @@
+package com.example.robmillaci.ultimatetictactoe
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+
+class ControlFragment : Fragment() {
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        val rootView = inflater.inflate(R.layout.fragment_control, container, false)
+        val main : Button = rootView.findViewById(R.id.button_main)
+        val restart : Button = rootView.findViewById(R.id.button_restart)
+
+        main.setOnClickListener(View.OnClickListener { getActivity()!!.finish() })
+
+        restart.setOnClickListener(View.OnClickListener { (getActivity() as GameActivity).restartGame() })
+
+        return rootView
+    }
+}

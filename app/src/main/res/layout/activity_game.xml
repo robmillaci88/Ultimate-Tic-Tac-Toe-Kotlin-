@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sandy_beach"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.example.robmillaci.ultimatetictactoe.GameFragment"
+            tools:layout="@layout/fragment_game"/>
+
+        <fragment
+            android:id="@+id/fragment_game_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.example.robmillaci.ultimatetictactoe.ControlFragment"
+            tools:layout="@layout/fragment_control"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/thinking"/>
+
+</FrameLayout>

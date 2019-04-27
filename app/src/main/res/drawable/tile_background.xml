@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tile_blue"
+        android:maxLevel="0"/>
+    <item android:drawable="@drawable/tile_red"
+        android:maxLevel="1"/>
+    <item android:drawable="@drawable/tile_gray"
+        android:maxLevel="2"/>
+    <item android:drawable="@drawable/tile_purple"
+        android:maxLevel="3"/>
+
+</level-list>
